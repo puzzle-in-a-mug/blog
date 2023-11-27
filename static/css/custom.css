@@ -14,3 +14,12 @@
 .box-simple {
     min-height: 230px;
 }
+.center {
+  text-align: center;
+}
+.img_center {
+  text-align: right;
+}
+.transparent {
+  color: rgba(0, 0, 0, 0);
+}

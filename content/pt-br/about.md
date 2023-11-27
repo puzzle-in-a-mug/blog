@@ -6,45 +6,89 @@ title: Sobre
 ---
 
 
-EU SOU UM CAR DE BOA
+O projeto "*The Puzzle in a Mug*" é um projeto relativamente antigo (uns 10 anos). Já cheguei a colocar ele em prática algumas vezes, mas alguns acontecimentos da vida atrasou seu desenvolvimento e mudou seu rumo.
 
-imagem
+Hoje o projeto é sobre desenvolvimento de aplicações para analise de dados, com intuito de *aprender* e *entregar* algum tipo de conhecimento interessante para a comunidade. No futuro ele pode virar outra coisa, afinal de contas, a bebida na caneca pode acabar ou perder a graça em algum momento.
 
-imgagem
-Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo.
 
-## 1. WHAT TO DO IF I HAVE STILL NOT RECEIVED THE ORDER?
 
-Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo.
+{{< figure class="center" width="200" src="https://raw.githubusercontent.com/puzzle-in-a-mug/.github/main/logo.png" alt="Uma caneca vermelha com uma peça de jogo de quebra cabeça desenhada. Dentro da caneca o logo do Python usando um gorro vermelho." >}}
 
-* Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
-* Aliquam tincidunt mauris eu risus.
-* Vestibulum auctor dapibus neque.
 
-## 2. WHAT ARE THE POSTAL RATES?
+## Pacotes Python
 
-Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+Hoje o projeto conta com dois projetos em andamento já disponíveis no [pypi](https://pypi.org/). Porém, estão em fase alpha de desenvolvimento, e devem ser utilizados com cautela.
 
-## 3. DO YOU SEND OVERSEAS?
+### paramcheckup 
 
-Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+O pacote ```paramcheckup``` é apenas uma coleção de funções que verificam se um valor é de um tipo espeficiado. Ele esta sendo desenvolvido para ser utilizado em ```class``` para verificar se os inputs do usuário tem o tipo desejado. Isto resolve uma questão do Python de que os tipos dos inputs das ```class``` e das ```function``` serem apenas hints. Fazer esta verificação logo no inicio do código previne gasto computacional. 
 
-## 4. WHY ARE YOU MORE EXPENSIVE THAN OTHERS?
+Quando encontra algo não esperado a função retorna um aviso dizendo qual parâmetro esta errado, por que esta errado e em qual linha do código do usuário em que ocorreu o erro. Também é possível mostrar o erro completo gerado pelo compilador Python.
 
-Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo.
+Para instalar o pacote ```paramcheckup``` utilize:
 
-* Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
-* Aliquam tincidunt mauris eu risus.
-* Vestibulum auctor dapibus neque.
+```python
+pip install paramcheckup 
+```
 
-## 5. ANOTHER IMPORTANT QUESTION
+&nbsp;
 
-Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo.
+{{< figure class="center" width="200"  src="https://raw.githubusercontent.com/puzzle-in-a-mug/paramcheckup/main/docs/_static/logo.png" alt="Logo do pacote paramcheckup" >}}
 
-* Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
-* Aliquam tincidunt mauris eu risus.
-* Vestibulum auctor dapibus neque.
+&nbsp;
 
----
+A documentação esta disponível em [paramcheckup.readthedocs](https://paramcheckup.readthedocs.io/en/latest/index.html).
 
-> In case you haven't found the answer for your question please feel free to contact us, our customer support will be happy to help you.
+### normtest
+
+O pacote ```normtest``` contém ```function``` e ```class``` para aplicar testes de Normalidade em dados experimentais. Cada teste tem seu respectivo módulo e uma classe, que podem ser acessados indivualmente.
+
+Porém, as ```class``` é que devem ser utilizadas para obter resultado de forma simples e rápida: elas retornam os principais resultados, como a estatística do teste, valor crítico, p-valor (quando disponível) e a conclusão do teste (e.g., dados Normais ou dados não Normais). Também permitem acesso a visualizações gráficas, como gráficos com a distribuição esperada do teste. 
+
+Atualmente existem três testes implementados, que são testes que fazem uso do coeficiente de correlação:
+
+* Filliben;
+* Looney-Gulledge;
+* Ryan-Joiner;
+
+
+
+Para instalar o pacote ```normtest``` utilize:
+
+```python
+pip install normtest 
+```
+
+&nbsp;
+
+{{< figure class="center" width="200" src="https://raw.githubusercontent.com/puzzle-in-a-mug/normtest/main/docs/_static/favicon-180x180.png" alt="Logo do pacote normtest" >}}
+
+&nbsp;
+
+A documentação esta disponível em [normtest.readthedocs](https://normtest.readthedocs.io/en/latest/index.html).
+
+
+### Outros pacotes
+
+Outros pacotes estão em desenvolvimento e vão ser diponibilizados no futuro ~~não tão~~ próximo:
+
+* ```pygnosis```: avalia a regressão dos dados;
+* ```bibmaker```: cria arquivos ```.bib```;
+* ```pysorption```: aplica regressão em dados de adsorção;
+
+Existem diversas outras ideias, mas não tenho tempo ~~financiamento~~ no momento.
+
+## Sobre o autor
+
+Quem sou eu? Meu nome é Anderson, tenho alguns anos de idade que conferem tons de cinza na minha barba. Gosto de ler, jogar, estudar, e outros verbos de ação relacionados. Sou meio chato as vezes.
+
+
+## O que significa *The PuZZle in a Mug*?
+
+That's the puzzle!!
+
+&nbsp;
+
+&nbsp;
+
+
