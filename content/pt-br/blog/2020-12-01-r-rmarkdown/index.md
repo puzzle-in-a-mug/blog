@@ -4,13 +4,18 @@ author: "Frida Gomam"
 date: 2020-12-01T21:13:14-05:00
 categories: ["R"]
 tags: ["R Markdown", "plot", "regression"]
+mathjax: true
 ---
+
+ok, agora movas verj
 
 
 
 # R Markdown
 
-Isto é um documento Markdown;. Markdown é um formato simples e bla blab lba.  is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. For more details on using R Markdown see <http://rmarkdown.rstudio.com>.
+Isto é um documento Markdown;. Markdown é um formato simples e bla blab lba.  is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. For more details on using R Markdown see <http://rmarkdown.rstudio.com>. `$S_n = \sum_{i=1}^n X_i$`
+
+ok
 
 You can embed an R code chunk like this:
 
@@ -51,6 +56,6 @@ pie(
 ```
 
 <div class="figure">
-<img src="/hugo-universal-theme/post/2020-12-01-r-rmarkdown/index.pt-br_files/figure-html/pie-1.png" alt="A fancy pie chart." width="672" />
+<img src="{{< blogdown/postref >}}index_files/figure-html/pie-1.png" alt="A fancy pie chart." width="672" />
 <p class="caption"><span id="fig:pie"></span>Figure 1: A fancy pie chart.</p>
 </div>

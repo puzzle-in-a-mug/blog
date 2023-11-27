@@ -2,7 +2,7 @@ baseurl = "https://devcows.github.io/hugo-universal-theme/" # Configure URL. if 
 title = "The Puzzle in a Mug"
 theme = "hugo-universal-theme"
 languageCode = "en-us"
-
+ignoreFiles = ["\\.Rmd$", "\\.Rmarkdown$", "_cache$"]
 # Site language. Available translations in the theme's `/i18n` directory.
 defaultContentLanguage = "pt-br"
 defaultContentLanguageInSubdir = true
@@ -17,7 +17,8 @@ defaultContentLanguageInSubdir = true
     weight = 1
     [languages.pt-br.params]
       subtitle = ''
-      #about_us = "<p>Isso é um teste.</p>"
+      # Style options: default (light-blue), blue, green, marsala, pink, red, turquoise, violet
+      style = "turquoise"
       # Format dates with Go's time formatting
       date_format = "2 January 2006"   
       copyright = "Copyright (c) 2023 - 2023, The PuZZle in a Mug; Todos os direitos reservados."
@@ -72,13 +73,15 @@ defaultContentLanguageInSubdir = true
               
   [languages.en]
     contentDir = 'content/en'
-    disabled = false
+    disabled = true
     languageCode = 'en-US'
     languageDirection = 'ltr'
     languageName = 'English'
     title = 'The Puzzle in a Mug'
     weight = 2
     [languages.en.params]
+      # Style options: default (light-blue), blue, green, marsala, pink, red, turquoise, violet
+      style = "red"    
       subtitle = ''
       # Format dates with Go's time formatting
       date_format = "January 2, 2006"     
@@ -147,6 +150,15 @@ pluralizelisttitles = false
 
 
 [params]
+    # options for highlight.js (version, additional languages, and theme)
+    highlightjsVersion = "9.12.0"
+    highlightjsCDN = "//cdnjs.cloudflare.com/ajax/libs"
+    highlightjsLang = ["r", "yaml"]
+    highlightjsTheme = "github"
+
+    MathJaxCDN = "//cdnjs.cloudflare.com/ajax/libs"
+    MathJaxVersion = "2.7.5"
+    
     viewMorePostLink = "/blog/"
     author = "Anderson Canteli"
     defaultKeywords = ["dados", "puzzle"]
@@ -165,8 +177,7 @@ pluralizelisttitles = false
     latitude = "25.4372"
     longitude = "49.2700"
 
-    # Style options: default (light-blue), blue, green, marsala, pink, red, turquoise, violet
-    style = "turquoise"
+
 
     # Since this template is static, the contact form uses www.formspree.io as a
     # proxy. The form makes a POST request to their servers to send the actual
@@ -221,6 +232,12 @@ pluralizelisttitles = false
       </p>
       """
 
+[markup]
+  defaultMarkdownHandler = "goldmark"
+  [markup.goldmark.renderer]
+    unsafe = true  # Enable user to embed HTML snippets in Markdown content.
+  [markup.highlight]
+    codeFences = false
 
 [permalinks]
     blog = "/blog/:year/:month/:day/:filename/"

@@ -4,7 +4,10 @@ author: "Frida Gomam"
 date: 2020-12-01T21:13:14-05:00
 categories: ["R"]
 tags: ["R Markdown", "plot", "regression"]
+mathjax: true
 ---
+
+ok, agora movas verj
 
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(collapse = TRUE)
@@ -12,7 +15,9 @@ knitr::opts_chunk$set(collapse = TRUE)
 
 # R Markdown
 
-Isto é um documento Markdown;. Markdown é um formato simples e bla blab lba.  is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. For more details on using R Markdown see <http://rmarkdown.rstudio.com>.
+Isto é um documento Markdown;. Markdown é um formato simples e bla blab lba.  is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. For more details on using R Markdown see <http://rmarkdown.rstudio.com>. `$S_n = \sum_{i=1}^n X_i$`
+
+ok
 
 You can embed an R code chunk like this:
 
