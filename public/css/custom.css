@@ -35,3 +35,14 @@ code.has-jax {
 .table caption {
   text-align: center;
 }
+.figure .caption {
+  text-align: center;
+}
+p {
+  line-height: 150%;
+  text-align: justify;
+  text-indent: 40px;
+}
+.zeroindent {
+  text-indent: 0px;
+}

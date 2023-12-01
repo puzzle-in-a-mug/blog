@@ -48,6 +48,8 @@ po/*~
 # RStudio Connect folder
 rsconnect/
 
+.DS_STORE
+Thumbs.db
 
 # Python
 
@@ -216,3 +218,5 @@ cython_debug/
 # vscode
 .vscode/
 
+/public
+/resources
