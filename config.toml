@@ -1,4 +1,4 @@
-baseurl = "https://dews.github.io/hugo-universal-theme/" # Configure URL. if using gh-pages https://github.com/<username>/hugo-universal-theme URL: https://<username>.github.io/hugo-universal-theme/
+baseurl = "/" # Configure URL. if using gh-pages https://github.com/<username>/hugo-universal-theme URL: https://<username>.github.io/hugo-universal-theme/
 title = "The Puzzle in a Mug"
 theme = "hugo-universal-theme"
 languageCode = "en-us"
