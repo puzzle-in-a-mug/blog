@@ -39,6 +39,9 @@
 
 - id: categoriesTitle
   translation: "Categories"
+  
+- id: tocTitle
+  translation: "Table of Contents"  
 
 - id: searchTitle
   translation: "Search"

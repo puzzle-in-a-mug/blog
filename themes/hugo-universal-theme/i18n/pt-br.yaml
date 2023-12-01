@@ -39,6 +39,9 @@
 
 - id: categoriesTitle
   translation: "Categorias"
+  
+- id: tocTitle
+  translation: "Índice"  
 
 - id: searchTitle
   translation: "Buscar"

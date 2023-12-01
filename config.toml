@@ -1,4 +1,4 @@
-baseurl = "https://devcows.github.io/hugo-universal-theme/" # Configure URL. if using gh-pages https://github.com/<username>/hugo-universal-theme URL: https://<username>.github.io/hugo-universal-theme/
+baseurl = "https://dews.github.io/hugo-universal-theme/" # Configure URL. if using gh-pages https://github.com/<username>/hugo-universal-theme URL: https://<username>.github.io/hugo-universal-theme/
 title = "The Puzzle in a Mug"
 theme = "hugo-universal-theme"
 languageCode = "en-us"
@@ -6,6 +6,9 @@ ignoreFiles = ["\\.Rmd$", "\\.Rmarkdown$", "_cache$"]
 # Site language. Available translations in the theme's `/i18n` directory.
 defaultContentLanguage = "pt-br"
 defaultContentLanguageInSubdir = true
+# number of words of summarized post content (default 70)
+summaryLength = 20
+
 [languages]
   [languages.pt-br]
     contentDir = 'content/pt-br'
@@ -133,12 +136,11 @@ defaultContentLanguageInSubdir = true
       
       
 # Enable comments by entering your Disqus shortname
-disqusShortname = "devcows"
+disqusShortname = "andersonmdcanteli"
 # Enable Google Analytics by entering your tracking code
 googleAnalytics = ""
 
-# number of words of summarized post content (default 70)
-summaryLength = 70
+
 
 # Define the number of posts per page
 paginate = 10
@@ -153,7 +155,7 @@ pluralizelisttitles = false
     # options for highlight.js (version, additional languages, and theme)
     highlightjsVersion = "9.12.0"
     highlightjsCDN = "//cdnjs.cloudflare.com/ajax/libs"
-    highlightjsLang = ["r", "yaml"]
+    highlightjsLang = ["r", "yaml", "python"]
     highlightjsTheme = "github"
 
     MathJaxCDN = "//cdnjs.cloudflare.com/ajax/libs"
@@ -166,9 +168,9 @@ pluralizelisttitles = false
     defaultDescription = """"Why is it called Puzzles?" That's the puzzle"""
 
     # Social media
-    facebook_site = "" # the Facebook handle of your site ('https://www.facebook.com/HANDLE')
+    facebook_site = "https://www.facebook.com/canteli2207" # the Facebook handle of your site ('https://www.facebook.com/HANDLE')
     twitter_site = "GoHugoIO" # the Twitter handle of your site (without the '@')
-    default_sharing_image = "img/sharing-default.png"
+    default_sharing_image = "img/banners/banner-1.jfif"
 
     # Google Maps widget: If `googleMapsApiKey` is not set, no key will be passed to Google (which likely results in a broken map widget).
     enableGoogleMaps = false
@@ -213,7 +215,9 @@ pluralizelisttitles = false
     enableRecaptchaInContactForm = false
     googleRecaptchaKey = "site_key_for_google_recaptcha"
 
-    about_us = """<p>Why is it called Puzzles? Why a mug??</p><p class="transparent">That's the puzzle!!!</p>"""
+    about_us = """<span>Why is it called Puzzles? Why a mug??</span>
+    <br>
+    <span class="transparent">That's the puzzle!!!</span>"""
     
 
 
@@ -226,10 +230,9 @@ pluralizelisttitles = false
     logo = "img/logo.png"
     logo_small = "img/logo-small.png"
     
-    address = """<p>Curitiba-PR, <strong>BRASIL</strong></p>
-        
-        <p><i class="fas fa-envelope"></i> andersonmdcanteli@gmail.com</p>
-      </p>
+    address = """<span>Curitiba-PR, <strong>BRASIL</strong></span>
+        <br>
+        <span><i class="fas fa-envelope"></i> andersonmdcanteli@gmail.com</span>
       """
 
 [markup]

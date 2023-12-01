@@ -1,0 +1,18 @@
+{{ if .Site.Params.widgets.categories }}
+{{ if isset .Site.Taxonomies "categories" }}
+{{ if not (eq (len .Page.TableOfContents) 0) }}
+<div class="panel panel-default sidebar-menu">
+
+    <div class="panel-heading">
+        <h3 class="panel-title">{{ i18n "tocTitle" }}</h3>
+    </div>
+
+    <div class="panel-body">
+      {{ .Page.TableOfContents }}
+
+    </div>
+
+</div>
+{{ end }}
+{{ end }}
+{{ end }}
