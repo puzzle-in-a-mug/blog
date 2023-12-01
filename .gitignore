@@ -50,6 +50,8 @@ rsconnect/
 
 .DS_STORE
 Thumbs.db
+.DS_Store
+.hugo_build.lock
 
 # Python
 
