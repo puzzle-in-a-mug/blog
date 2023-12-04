@@ -21,6 +21,11 @@ bibliography: [RyanJoiner1976.bib, LooneyGulledge1985.bib, Filliben1975.bib, Sha
 <!-- Importações no Pyton -->
 <!-- Setando valores iniciais em Python -->
 <!-- Calculos em Python -->
+
+## Motivação
+
+Este texto foi escrito durante estudo e implementação do teste de PPCC no pacote [`normtest`](https://normtest.readthedocs.io/en/latest/), onde percebi a semelhança entre os testes, especialmente em relação aos valores críticos. Para verificar o quão parecido são os valores, resolvi encarar o problema tomando um cafezinho.
+
 <details>
 <summary class="pointer">
 <h3>
@@ -37,10 +42,6 @@ Sim e não. Eles são uns 99,98% iguais.
 
 </blockquote >
 </details>
-
-## Motivação
-
-Este texto foi escrito durante estudo e implementação do teste de PPCC no pacote [`normtest`](https://normtest.readthedocs.io/en/latest/), onde percebi a semelhança entre os testes, especialmente em relação aos valores críticos. Para verificar o quão parecido são os valores, resolvi encarar o problema tomando um cafezinho.
 
 ## Introdução
 
