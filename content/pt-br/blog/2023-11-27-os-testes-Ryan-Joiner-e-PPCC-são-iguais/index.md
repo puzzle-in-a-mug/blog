@@ -405,6 +405,22 @@ Porém, como na prática nós adotamos 95% de confiança, não fará diferença 
 
 Você encontra um notebook com os códigos utilizados para construir os gráficos e tabelas [neste link](https://github.com/puzzle-in-a-mug/blog/blob/main/notebooks/Are-Ryan-Joiner-and-PPCC-tests-the-same.ipynb).
 
+<script src="https://giscus.app/client.js"
+        data-repo="puzzle-in-a-mug/blog"
+        data-repo-id="R_kgDOKx46OQ"
+        data-category="Announcements"
+        data-category-id="DIC_kwDOKx46Oc4Cbf5x"
+        data-mapping="pathname"
+        data-strict="0"
+        data-reactions-enabled="1"
+        data-emit-metadata="0"
+        data-input-position="bottom"
+        data-theme="light"
+        data-lang="pt"
+        crossorigin="anonymous"
+        async>
+</script>
+
 ## Referências
 
 <br>
