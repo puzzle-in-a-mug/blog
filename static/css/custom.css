@@ -38,11 +38,16 @@ code.has-jax {
 .figure .caption {
   text-align: center;
 }
-p {
-  line-height: 150%;
-  text-align: justify;
-  text-indent: 40px;
+
+
+#blog-post #post-content {
+  font-family: Roboto, Sans-Serif;
+  color: rgba(0, 0, 0, 0.8);
 }
-.zeroindent {
-  text-indent: 0px;
+
+#blog-post #post-content p {
+  text-indent: 40px;
+  line-height: 200%;
+  text-align: justify;
+  font-size: ;
 }
